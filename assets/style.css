@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Myfont";
+    src: url("./fonts/fa-solid-900.woff2") format("woff2");
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      color: #000;
+  }
+  
+  header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #218380;
+      padding: 15px 12px;
+  }
+  
+  header #leaderboard{
+      color: #fff;
+      cursor: pointer;
+  }
+  
+  header .timer{
+      color: #fff;
+  }
+  
+  main .container{
+      width: 70%;
+      margin: 50px auto;
+  }
+  
+  main .content-box{
+      padding: 35px 30px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 1px, rgba(60, 64, 67, 0.15) 5px 5px 3px 1px;;
+      margin-bottom: 30px;
+  }
+  
+  .content-header{
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+  
+  .btn{
+      background-color: #218380;
+      color: #fff;
+      font-size: 13px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+      padding: 8px 10px;
+      margin-top: 10px;
+  }
+  
+  .para{
+      font-weight: 500;
+      margin: 15px 0;
+  }
+
+  main .question-container{
+    display: none;
+}
+main .question-section #question{
+    font-size: 20px;
+}
+
+main .options li{
+    list-style: none;
+    background-color: #218380;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+main .options li:hover, main .btn:hover{
+    background-color: #166967;
+}
+
+main .result-box{
+    display: none;
+    margin-top: 20px 0;
+    border-top: 2px solid #ddd;
+    padding: 10px 5px;
+}
+  
+  main .scoresheet-section{
+      width: 80%;
+      margin: auto;
+      display: none;
+  }
+  
+  main .scoresheet-section .form-group input{
+      padding: 5px;
+  }
+  
+  main .highscores-section{
+      width: 80%;
+      margin: auto;
+      display: none;
+  }
+  
+  main .highscores-section .score-list li{
+      font-size: 18px;
+      margin: 20px 70px;
+  }
+  
+  
+@media (max-width: 600px){
+    main .container{
+        width: 90%;
+    }
+    main .content-header{
+      font-size: 19px;
+  }
+    main .content-box{
+      padding: 25px 20px;
+    }
+   main .highscores-section{
+        width: 85%;
+    }
+    main .scoresheet-section{
+        width: 90%;
+    }
+}
